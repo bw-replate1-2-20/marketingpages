@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+   background: @solitude;
+}
+
+section {
+   padding: 10px 5vw;
+}
+
+h1 {
+   font-size: 3.5rem;
+}
+
+h2 {
+   font-size: 3rem;
+}
+
+h3 {
+   font-size: 2.4rem;
+}
+
+p {
+   line-height: 1.5;
+   font-size: 1.6rem;
+   margin: 8px 0;
+}
+
+small {
+   font-size: 1.4rem;
+   margin: 8px 0;
+}
+
+a {
+   font-size: 1.8rem;
+   color: @tuna;
+
+   &:hover {
+      color: @pale-tangerine;
+      cursor: pointer;
+   }
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+b {
+   font-weight: 700;
+}
+
+button {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 2rem;
+   
+   cursor: pointer;
+
+   color: @white;
+   background-color: @regal-blue;
+
+   font-size: 1.8rem;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   border: none;
+
+   border-radius: 7px;
+   transition: all .3s ease-out;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+
+   &:hover {
+      text-decoration: none;
+      box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
+      background-color: lighten(@regal-blue, 10%)
+   }
+}
