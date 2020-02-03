@@ -1,8 +1,16 @@
+
 .navbar {
    padding-top: 40px;
    background: @white;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+   width: 100%;
 
+   @media @desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0 10px;
+   }
 
    .logo {
       h2 {
