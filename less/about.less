@@ -1,0 +1,57 @@
+// Follow the order in the readme
+
+@import "./global/variables.less";
+@import "./global/footer.less";
+@import "./global/reset.less";
+@import "./global/global.less";
+@import "./global/navbar.less";
+
+
+
+.team {
+    .teamtop {
+
+        h1 {
+            padding: 14% 0 3% 0;       
+        }
+        p {
+            padding-bottom: 10%;    
+        }
+    } 
+
+    .mugshots {   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 14%;
+        
+        
+        @media @desktop {
+
+        }
+
+        div {
+            width: 50%;
+            padding-bottom: 5%;
+
+            img, h3 {
+                width: 100%;
+                padding: 3%;
+
+                @media @desktop {
+                    width: 60%;
+                }
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-size: 1.6rem;
+            } 
+        }        
+    }
+}
