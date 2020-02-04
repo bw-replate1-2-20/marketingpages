@@ -197,7 +197,6 @@ a {
   color: #373743;
 }
 a:hover {
-  color: #FF974C;
   cursor: pointer;
 }
 img {
@@ -216,6 +215,7 @@ button {
   color: #FFFFFF;
   background-color: #014A73;
   font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   outline: none;
@@ -242,46 +242,227 @@ button:hover {
     align-items: center;
   }
 }
-.navbar .container {
+.navbar nav.container {
   max-width: 1200px;
   padding: 50px 15px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar .logo h2 {
+@media (min-width: 1200px) {
+  .navbar nav.container {
+    padding: 50px 15px 10px;
+  }
+}
+.navbar nav.container a {
+  text-decoration: none;
+}
+.navbar nav.container .logo h2 {
   font-family: 'Baloo Bhai', sans-serif;
   font-size: 4rem;
 }
-.team .teamtop h1 {
+.navbar nav.container .desktop-links {
+  display: none;
+  width: 380px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .navbar nav.container .desktop-links {
+    display: flex;
+  }
+}
+.navbar nav.container .desktop-links button {
+  font-size: 1.5rem;
+}
+.navbar nav.container .desktop-links .link {
+  position: relative;
+  bottom: -3px;
+}
+.navbar nav.container .desktop-links .link:hover {
+  position: relative;
+  color: #111121;
+  border-bottom: 2px solid #111121;
+  bottom: -4px;
+}
+@media (min-width: 1200px) {
+  .navbar nav.container .mobile-links {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  body .container {
+    width: 1200px;
+  }
+}
+section.banner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (min-width: 1200px) {
+  section.banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 800px;
+  }
+}
+section.banner .banner-container {
+  display: flex;
+  flex-direction: column;
+}
+section.banner h1 {
+  line-height: 1.1;
+}
+@media (min-width: 1200px) {
+  section.banner h1 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+}
+section.banner p {
+  margin: 20px 0;
+}
+@media (min-width: 1200px) {
+  section.banner p {
+    margin: 5px 0 40px;
+    font-size: 2rem;
+  }
+}
+section.banner button {
+  width: 150px;
+}
+section.banner small {
+  text-decoration: underline;
+}
+section.information {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+section.information article {
+  padding-right: 10%;
+  margin: 15px 0;
+}
+@media (min-width: 1200px) {
+  section.information article {
+    width: 49.5%;
+    padding-right: 0;
+  }
+}
+section.information article h2 {
+  margin-bottom: 20px;
+}
+section.information article h3 {
+  margin-bottom: 10px;
+}
+section.information article p {
+  margin-bottom: 0;
+}
+section.information .questions {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  section.information .questions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+body .team .teamtop h1 {
   padding: 14% 0 3% 0;
+  line-height: 1.1;
 }
-.team .teamtop p {
-  padding-bottom: 10%;
+@media (min-width: 1200px) {
+  body .team .teamtop h1 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
 }
-.team .mugshots {
+body .team .teamtop p {
+  padding-bottom: 8%;
+  margin: 20px 0;
+}
+@media (min-width: 1200px) {
+  body .team .teamtop p {
+    margin: 5px 0 40px;
+    font-size: 2rem;
+    padding: 0;
+  }
+}
+body .team .mugshots {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding-bottom: 14%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1%;
 }
-.team .mugshots div {
+@media (min-width: 1200px) {
+  body .team .mugshots {
+    padding: 0;
+    align-items: center;
+  }
+}
+body .team .mugshots div {
   width: 50%;
   padding-bottom: 5%;
 }
-.team .mugshots div img,
-.team .mugshots div h3 {
-  width: 100%;
-  padding: 3%;
-}
 @media (min-width: 1200px) {
-  .team .mugshots div img,
-  .team .mugshots div h3 {
-    width: 60%;
+  body .team .mugshots div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 }
-.team .mugshots div h3 {
+body .team .mugshots div img,
+body .team .mugshots div h3 {
+  width: 100%;
+  padding: 5%;
+}
+@media (min-width: 1200px) {
+  body .team .mugshots div img {
+    padding: 10% 10% 3%;
+    width: 500px;
+    height: 450px;
+  }
+}
+body .team .mugshots div h3 {
   font-size: 2rem;
 }
-.team .mugshots div h4 {
+@media (min-width: 1200px) {
+  body .team .mugshots div h3 {
+    padding: 2%;
+  }
+}
+body .team .mugshots div h4 {
   font-size: 1.6rem;
+  padding-bottom: 10%;
+}
+@media (min-width: 1200px) {
+  body .team .mugshots div h4 {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  body .team .mugshots .paddingBottom {
+    padding-bottom: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  body .space {
+    height: 100px;
+  }
 }
