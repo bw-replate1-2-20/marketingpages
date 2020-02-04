@@ -386,6 +386,7 @@ body .team .teamtop h1 {
   body .team .teamtop h1 {
     font-weight: 700;
     font-size: 5rem;
+    padding-top: 8%;
   }
 }
 body .team .teamtop p {
