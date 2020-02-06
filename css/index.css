@@ -154,6 +154,13 @@ table {
   font-display: swap;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Condiment';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Condiment'), local('Condiment-Regular'), url(https://fonts.gstatic.com/s/condiment/v7/pONk1hggFNmwvXALyH6irIP8.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -189,11 +196,15 @@ h4,
 h5 {
   font-weight: 500;
 }
+.fancy-text {
+  font-family: 'Condiment', cursive;
+}
 h1 {
   font-size: 4.2rem;
 }
 h2 {
   font-size: 3.2rem;
+  line-height: 1.5;
 }
 h3 {
   font-size: 2.4rem;
@@ -301,8 +312,10 @@ button:hover {
     align-items: center;
   }
 }
+section .small-container {
+  width: 80%;
+}
 section.intro {
-  border: 1px solid #373743;
   background: url('../images/index/hero.jpg') no-repeat center center fixed;
   background-size: cover;
 }
@@ -315,8 +328,8 @@ section.intro .hero .motivation {
 }
 @media (min-width: 1200px) {
   section.intro .hero .motivation {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 120px;
     max-width: 800px;
   }
 }
@@ -346,14 +359,14 @@ section.intro .hero .motivation small {
   text-decoration: underline;
 }
 section.info {
-  border: 1px solid #373743;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 section.info article {
-  color: black;
   margin: 15px 0;
   padding-right: 5%;
 }
@@ -362,14 +375,13 @@ section.info article {
     width: 49.5%;
   }
 }
-section.info article h2 {
-  margin-bottom: 20px;
-}
 section.info article h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: black;
 }
 section.info article p {
   margin-bottom: 0;
+  color: #10101a;
 }
 section.info .questions {
   display: flex;
@@ -381,4 +393,55 @@ section.info .questions {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+section.stats {
+  background: url('../images/index/blueberries.jpg') no-repeat center center fixed;
+  background-size: 100%;
+}
+section.stats .motivation {
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 30px 0;
+  text-align: center;
+}
+section.donate {
+  padding: 100px 0;
+  background: #10101a;
+}
+section.donate .small-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section.donate .small-container .image-box {
+  width: 40%;
+}
+section.donate .small-container .image-box img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ffffff, 0 0 5px rgba(255, 255, 255, 0.22);
+}
+section.donate .small-container .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+}
+section.donate .small-container .text h2 {
+  font-size: 8rem;
+}
+section.donate .small-container .text p {
+  font-size: 1.8rem;
+  margin: 35px 0;
+}
+section.donate .small-container .text .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-between;
+}
+section.donate .small-container .text .buttons button {
+  width: 48.5%;
 }
