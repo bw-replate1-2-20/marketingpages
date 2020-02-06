@@ -246,13 +246,14 @@ button {
   outline: none;
   border: none;
   border-radius: 7px;
-  transition: all 0.3s ease-out;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+  transition: all 0.3s ease-out;
 }
 button:hover {
+  transition: all 0.3s ease-out;
   text-decoration: none;
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
-  background-color: #2bb889;
+  background-color: #1c7a5b;
 }
 @media (min-width: 1200px) {
   .navbar {
@@ -288,17 +289,7 @@ button:hover {
   }
 }
 .navbar nav .desktop-links button {
-  font-size: 1.5rem;
-}
-.navbar nav .desktop-links .link {
-  position: relative;
-  bottom: -3px;
-}
-.navbar nav .desktop-links .link:hover {
-  position: relative;
-  color: #111121;
-  border-bottom: 2px solid #111121;
-  bottom: -4px;
+  font-size: 1.55rem;
 }
 @media (min-width: 1200px) {
   .navbar nav .mobile-links {

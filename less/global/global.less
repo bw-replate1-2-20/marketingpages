@@ -107,12 +107,14 @@ button {
    border: none;
 
    border-radius: 7px;
-   transition: all .3s ease-out;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
 
+   transition: all .3s ease-out;
+
    &:hover {
+      transition: all .3s ease-out;
       text-decoration: none;
       box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
-      background-color: lighten(@regal-green, 10%)
+      background-color: darken(@regal-green, 5%)
    }
 }
