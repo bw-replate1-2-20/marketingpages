@@ -356,6 +356,7 @@ section.info {
   position: relative;
   z-index: 5;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 10px 0;
 }
 section.info article {
   margin: 15px 0;
