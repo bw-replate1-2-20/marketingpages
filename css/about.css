@@ -401,10 +401,12 @@ body .team .teamtop p {
 @media (min-width: 1200px) {
   body .team .teamtop p {
     margin: 5px 0 20px;
+
     font-size: 2rem;
     padding: 0;
   }
 }
+
 body .mugshots {
   display: flex;
   flex-direction: column;
@@ -514,11 +516,13 @@ body .mugshots div h3 {
   }
 }
 body .mugshots div h4 {
+
   font-size: 1.6rem;
   padding-bottom: 10%;
 }
 @media (min-width: 1200px) {
   body .mugshots div h4 {
+
     padding: 0;
   }
 }
