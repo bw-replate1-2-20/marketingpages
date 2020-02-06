@@ -378,3 +378,72 @@ section.information .questions {
     justify-content: space-between;
   }
 }
+.locationTop h1 {
+  padding-top: 14%;
+  line-height: 1.1;
+}
+@media (min-width: 1200px) {
+  .locationTop h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    padding: 8% 0 2% 0;
+  }
+}
+.locationTop p {
+  margin: 20px 0;
+}
+@media (min-width: 1200px) {
+  .locationTop p {
+    margin: 5px 0 20px;
+    font-size: 2rem;
+    padding: 0;
+  }
+}
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .locations {
+    justify-content: space-evenly;
+  }
+}
+.locations div {
+  margin: 3% 0;
+  width: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 2% 2% 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1200px) {
+  .locations div {
+    width: 30%;
+    margin: 1%;
+  }
+}
+.locations div p {
+  line-height: 1;
+}
+@media (min-width: 1200px) {
+  .locations div p {
+    font-size: 2rem;
+    padding-bottom: 1%;
+  }
+}
+.locations div .loclink {
+  box-shadow: none;
+  font-size: 1.6rem;
+}
+@media (min-width: 1200px) {
+  .locations div .loclink {
+    width: 100%;
+    box-shadow: none;
+    font-size: 2rem;
+    padding: 8% 0;
+  }
+}
+footer {
+  text-align: center;
+  padding: 7% 0 2%;
+}
