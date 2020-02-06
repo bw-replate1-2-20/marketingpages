@@ -1,5 +1,3 @@
-// Follow the order in the readme
-
 @import "./global/variables.less";
 @import "./global/footer.less";
 @import "./global/reset.less";
@@ -11,78 +9,86 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-
-   }
-   .container {
-      @media @desktop {
-         width: 1200px;
-      }
    }
 }
 
 section {
-   &.banner {
-      padding-top: 70px;
-      padding-bottom: 70px;
+   &.intro {
+      border: 1px solid @tuna;
+      background: url('../images/index/hero.jpg') no-repeat center center fixed;
+      background-size: cover;
 
-      @media @desktop {
-         padding-top: 100px;
-         padding-bottom: 100px;
-         max-width: 800px;
-      }
+      .hero {
+         .motivation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 70px;
+            padding-bottom: 70px;
 
-      .banner-container {
-         display: flex;
-         flex-direction: column;
-      }
+            @media @desktop {
+               padding-top: 100px;
+               padding-bottom: 100px;
+               max-width: 800px;
+            }
 
-      h1 {
-         line-height: 1.1;
-         
-         @media @desktop {
-            font-weight: 700;
-            font-size: 5rem;
+            h1 {
+               line-height: 1.1;
+
+               @media @desktop {
+                  font-weight: 700;
+                  font-size: 5rem;
+               }
+            }
+
+            p {
+               margin: 20px 0;
+
+               @media @desktop {
+                  margin: 20px 0 40px;
+                  font-size: 2rem;
+               }
+            }
+
+            button {
+               width: 150px;
+            }
+
+            small {
+               margin: 10px 0;
+               text-decoration: underline;
+            }
          }
-      }
-
-      p {
-         margin: 20px 0;
-         @media @desktop {
-            margin: 5px 0 40px;
-            font-size: 2rem;
-         }
-      }
-
-      button {
-         width: 150px;
-      }
-
-      small {
-         text-decoration: underline;
       }
    }
 
-   &.information {
+
+   &.info {
+      border: 1px solid @tuna;
+      // background: url('../images/index/volunteer.jpg') no-repeat center center fixed;
+      background-size: cover;
+      
       display: flex;
       flex-direction: column;
-      background: @white;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-
+      justify-content: center;
+      
       article {
-         padding-right: 10%;
+         color: black;
          margin: 15px 0;
+         padding-right: 5%;
 
          @media @desktop {
             width: 49.5%;
-            padding-right: 0;
          }
 
          h2 {
             margin-bottom: 20px;
          }
+
          h3 {
             margin-bottom: 10px;
          }
+
          p {
             margin-bottom: 0;
          }
@@ -100,4 +106,3 @@ section {
       }
    }
 }
-

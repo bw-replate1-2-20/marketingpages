@@ -8,17 +8,36 @@
 html {
    font-size: 62.5%;
    font-family: 'Roboto', sans-serif;
+   color: white;
 }
 
 body {
-   background: @solitude;
+   background: @white;
 }
 
 section {
-   padding: 10px 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-h1, h2, h3, h4, h5 {
+.content {
+   max-width: 2700px;
+}
+
+.container {
+   padding: 20px;
+   @media @desktop {
+      width: 80%;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
    font-weight: 500;
 }
 
@@ -42,12 +61,11 @@ p {
 
 small {
    font-size: 1.4rem;
-   margin: 8px 0;
 }
 
 a {
    font-size: 1.8rem;
-   color: @tuna;
+   color: @white;
 
    &:hover {
       cursor: pointer;
@@ -68,7 +86,7 @@ button {
    justify-content: center;
    align-items: center;
    padding: 1rem 2rem;
-   
+
    cursor: pointer;
 
    color: @white;
