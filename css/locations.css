@@ -378,170 +378,72 @@ section.information .questions {
     justify-content: space-between;
   }
 }
-@media (min-width: 1200px) {
-  body .team {
-    padding-bottom: 2%;
-  }
-}
-body .team .teamtop h1 {
-  padding: 14% 0 1% 0;
+.locationTop h1 {
+  padding-top: 14%;
   line-height: 1.1;
 }
 @media (min-width: 1200px) {
-  body .team .teamtop h1 {
+  .locationTop h1 {
     font-weight: 700;
     font-size: 5rem;
     padding: 8% 0 2% 0;
   }
 }
-body .team .teamtop p {
-  padding-bottom: 6%;
+.locationTop p {
   margin: 20px 0;
 }
 @media (min-width: 1200px) {
-  body .team .teamtop p {
+  .locationTop p {
     margin: 5px 0 20px;
     font-size: 2rem;
     padding: 0;
   }
 }
-body .mugshots {
+.locations {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .locations {
+    justify-content: space-evenly;
+  }
+}
+.locations div {
+  margin: 3% 0;
+  width: 100%;
   text-align: center;
   background: #FFFFFF;
+  padding: 2% 2% 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 1%;
-  padding-top: 7%;
-}
-body .mugshots .row1 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
 }
 @media (min-width: 1200px) {
-  body .mugshots .row1 {
-    justify-content: space-evenly;
+  .locations div {
+    width: 30%;
+    margin: 1%;
   }
+}
+.locations div p {
+  line-height: 1;
 }
 @media (min-width: 1200px) {
-  body .mugshots .row1 div {
-    width: 35%;
+  .locations div p {
+    font-size: 2rem;
+    padding-bottom: 1%;
   }
 }
-@media (min-width: 1200px) {
-  body .mugshots .row1 img {
-    width: 100%;
-    padding: 0;
-    margin-top: 12%;
-  }
-}
-body .mugshots .row2 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
-}
-@media (min-width: 1200px) {
-  body .mugshots .row2 {
-    justify-content: space-evenly;
-  }
-}
-@media (min-width: 1200px) {
-  body .mugshots .row2 div {
-    width: 35%;
-  }
-}
-@media (min-width: 1200px) {
-  body .mugshots .row2 img {
-    width: 100%;
-    padding: 0;
-    margin-top: 10%;
-  }
-}
-body .mugshots .row3 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
-}
-@media (min-width: 1200px) {
-  body .mugshots .row3 {
-    justify-content: space-evenly;
-  }
-}
-@media (min-width: 1200px) {
-  body .mugshots .row3 div {
-    width: 35%;
-  }
-}
-@media (min-width: 1200px) {
-  body .mugshots .row3 img {
-    width: 100%;
-    padding: 0;
-    margin-top: 10%;
-  }
-}
-body .mugshots div {
-  width: 50%;
-  padding-bottom: 1%;
-}
-@media (min-width: 1200px) {
-  body .mugshots div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-body .mugshots div img,
-body .mugshots div h3 {
-  width: 100%;
-  padding: 5%;
-}
-@media (min-width: 1200px) {
-  body .mugshots div img {
-    padding: 10% 10% 3%;
-  }
-}
-body .mugshots div h3 {
-  font-size: 2rem;
-}
-@media (min-width: 1200px) {
-  body .mugshots div h3 {
-    padding: 2%;
-  }
-}
-body .mugshots div h4 {
+.locations div .loclink {
+  box-shadow: none;
   font-size: 1.6rem;
-  padding-bottom: 10%;
 }
 @media (min-width: 1200px) {
-  body .mugshots div h4 {
-    padding: 0;
-  }
-}
-@media (min-width: 1200px) {
-  body .mugshots .paddingBottom {
-    justify-content: space-evenly;
-    padding-bottom: 3%;
-    width: 35%;
-  }
-}
-@media (min-width: 1200px) {
-  body .mugshots .paddingBottom img {
+  .locations div .loclink {
     width: 100%;
-    padding: 0;
-    margin-top: 10%;
+    box-shadow: none;
+    font-size: 2rem;
+    padding: 8% 0;
   }
 }
-body footer {
+footer {
   text-align: center;
-  padding: 3%;
-}
-@media (min-width: 1200px) {
-  body footer {
-    padding: 5% 0 1%;
-  }
+  padding: 7% 0 2%;
 }
