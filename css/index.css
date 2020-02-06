@@ -264,7 +264,7 @@ button:hover {
 }
 .navbar nav.container .desktop-links {
   display: none;
-  width: 380px;
+  width: 40%;
   justify-content: space-between;
   align-items: center;
 }
