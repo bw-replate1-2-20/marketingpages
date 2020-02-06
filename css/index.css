@@ -238,7 +238,7 @@ button {
   padding: 1rem 2rem;
   cursor: pointer;
   color: #FFFFFF;
-  background-color: #218f6a;
+  background-color: #014A73;
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
@@ -253,7 +253,7 @@ button:hover {
   transition: all 0.3s ease-out;
   text-decoration: none;
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
-  background-color: #1c7a5b;
+  background-color: #013a5a;
 }
 @media (min-width: 1200px) {
   .navbar {
