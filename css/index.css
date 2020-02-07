@@ -473,13 +473,13 @@ section.change-the-world .container .text h2 {
 }
 @media (min-width: 800px) {
   section.change-the-world .container .text h2 {
-    padding: 0 0 30px;
-    margin: 0;
     font-size: 8vw;
   }
 }
 @media (min-width: 1200px) {
   section.change-the-world .container .text h2 {
+    padding: 0 0 30px;
+    margin: 0;
     font-size: 7rem;
   }
 }
