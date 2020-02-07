@@ -1,0 +1,40 @@
+@import "./global/variables.less";
+@import "./global/footer.less";
+@import "./global/reset.less";
+@import "./global/global.less";
+@import "./global/navbar.less";
+@import "./index.less";
+
+
+.intro {
+   background: url('../images/index/team.jpg') no-repeat center center fixed !important;
+
+   @media @desktop {
+      background-size: 180% !important;
+   }
+}
+.store {
+   background: @vulkan;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+   padding: 30px 0;
+
+   a {
+      padding: 0;
+      margin: 5px 4px;
+      width: 45%;
+      @media @desktop {
+         margin: 15px;
+         width: 20%;
+      }
+      .image-box {
+         img {
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 5px rgba(255, 255, 255, 0.22);
+         }
+      }
+   }
+}
