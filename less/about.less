@@ -6,25 +6,22 @@
 @import "./global/global.less";
 @import "./global/navbar.less";
 @import "./index.less";
+@import "./global/mixins.less";
 
 
 body {
-
     .team {
         @media @desktop {
             padding-bottom: 2%;
         }    
-        .teamtop {
 
+        .teamtop {
             h1 {
                 padding: 14% 0 1% 0;  
                 line-height: 1.1;
                 
                 @media @desktop {
-                    font-weight: 700;
-                    font-size: 5rem;
-                    padding: 8% 0 2% 0;
-
+                    .fontStyle;
                 }   
             }
         
@@ -33,29 +30,24 @@ body {
                 margin: 20px 0;
                 
                 @media @desktop {
-                    margin: 5px 0 20px;
-                    font-size: 2rem;
-                    padding: 0;
+                    .pStyle
                 }    
             }
         }
     } 
 
-    .mugshots {   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background: @white;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    .mugshots {
+        .flexColumnAlign;   
+        .content;
         margin-bottom: 1%;
         padding-top: 7%;
 
+        @media @desktop {
+            padding-top: 2%;
+        }
+
         .row1 {
-            display: flex;
-            justify-content: space-between;            
-            width: 100%;
-            flex-direction: row;
+            .rowStyle;
 
             @media @desktop {
                 justify-content: space-evenly;
@@ -69,18 +61,13 @@ body {
                 
             img {
                 @media @desktop {
-                    width: 100%;
-                    padding: 0;
-                    margin-top: 12%;
+                   .imgStyle;
                 }
             }
         }
 
         .row2 {
-            display: flex;
-            justify-content: space-between;            
-            width: 100%;
-            flex-direction: row;
+            .rowStyle;
                 
             @media @desktop {
                 justify-content: space-evenly;
@@ -94,18 +81,13 @@ body {
                 
             img {
                 @media @desktop {
-                    width: 100%;
-                    padding: 0;
-                    margin-top: 10%;
+                   .imgStyle;
                 }
             }       
         }
 
         .row3 {
-            display: flex;
-            justify-content: space-between;            
-            width: 100%;
-            flex-direction: row;
+            .rowStyle;
 
             @media @desktop {
                 justify-content: space-evenly;
@@ -119,26 +101,20 @@ body {
                 
             img {
                 @media @desktop {
-                    width: 100%;
-                    padding: 0;
-                    margin-top: 10%;
+                   .imgStyle;
                 }
             }           
         }
 
         div {
-            width: 50%;
-            padding-bottom: 1%;
+            .paddingWidth(0 0 1%, 50%);
 
             @media @desktop {
-                display: flex;
-                flex-direction: column;
-                align-items: center;       
+                .flexColumnAlign;    
             }
 
             img, h3 {
-                width: 100%;
-                padding: 5%;  
+                .paddingWidth(5%, 100%);
             }
 
             img {
@@ -168,14 +144,12 @@ body {
         .paddingBottom {
                 @media @desktop {
                     justify-content: space-evenly;
-                    padding-bottom: 3%;
-                    width: 35%;
+                    .paddingWidth(0 0 3%, 35%);
                 }
                 
             img {
                 @media @desktop {
-                    width: 100%;
-                    padding: 0;
+                    .paddingWidth(0, 100%);
                     margin-top: 10%;
                 }
             }
