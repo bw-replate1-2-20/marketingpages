@@ -26,6 +26,11 @@
 
       a {
          text-decoration: none;
+         margin-bottom: 10px;
+
+         @media @desktop {
+            margin-bottom: 0px;
+         }
       }
 
       .logo {
@@ -38,9 +43,14 @@
       .desktop-links {
          display: flex;
 
-         width: 380px;
+         width: 480px;
          justify-content: space-between;
          align-items: center;
+         flex-direction: column;
+
+         @media @desktop {
+            flex-direction: row;
+         }
 
          button {
             font-size: 1.55rem;

@@ -288,6 +288,12 @@ button:hover {
 }
 .navbar nav a {
   text-decoration: none;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .navbar nav a {
+    margin-bottom: 0px;
+  }
 }
 .navbar nav .logo h2 {
   font-family: 'Baloo Bhai', sans-serif;
@@ -295,9 +301,15 @@ button:hover {
 }
 .navbar nav .desktop-links {
   display: flex;
-  width: 380px;
+  width: 480px;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .navbar nav .desktop-links {
+    flex-direction: row;
+  }
 }
 .navbar nav .desktop-links button {
   font-size: 1.55rem;
