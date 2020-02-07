@@ -358,7 +358,7 @@ section.intro .hero .motivation p {
 section.intro .hero .motivation button {
   width: 150px;
 }
-section.intro .hero .motivation small {
+section.intro .hero .motivation a {
   margin: 10px 0;
   text-decoration: underline;
 }
