@@ -139,6 +139,13 @@ section {
 
          .image-box {
             width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            @media @tablet {
+               width: 80%;
+               align-self: center;
+            }
 
             @media @desktop {
                width: 45%;
@@ -157,10 +164,15 @@ section {
             flex-direction: column;
 
             position: relative;
-            left: -2vw;
+            left: -1vw;
 
             width: 100%;
 
+            @media @tablet {
+               width: 80%;
+               align-self: center;
+            }
+            
             @media @desktop {
                width: 48%;
             }
@@ -173,6 +185,9 @@ section {
                padding: 30px 0;
                border-bottom: 1px solid rgba(255, 255, 255, 0.363);
 
+               @media @tablet {
+                  font-size: 8vw;
+               }
                @media @desktop {
                   font-size: 7rem;
                }
@@ -199,12 +214,13 @@ section {
    }
 
    &.footer {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
       .container {
          display: flex;
          flex-direction: column;
          padding-top: 50px;
          padding-bottom: 50px;
-         width: 90%;
          align-items: center;
       }
 
@@ -215,7 +231,7 @@ section {
          color: black;
          justify-content: space-between;
          padding: 0 0 20px;
-         border-bottom: 1px solid @dark-vulkan;
+         border-bottom: 2px solid @dark-vulkan;
          
          h4 {
             margin-bottom: 10px;
