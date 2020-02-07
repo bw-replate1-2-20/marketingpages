@@ -16,6 +16,7 @@ section {
    .small-container {
       width: 90%;
    }
+
    &.intro {
       background: url('../images/index/hero.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -23,6 +24,7 @@ section {
       .hero {
          padding-top: 70px;
          padding-bottom: 70px;
+
          .motivation {
             display: flex;
             flex-direction: column;
@@ -72,9 +74,10 @@ section {
 
       position: relative;
       z-index: 2;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
       padding: 30px 0;
+
       article {
          margin: 15px 0;
          padding-right: 5%;
@@ -122,14 +125,25 @@ section {
       padding: 100px 0;
       background: @dark-vulkan;
 
-      .small-container {
+      .container {
          display: flex;
          flex-direction: column;
          flex-wrap: wrap;
          justify-content: space-around;
 
+         @media @desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+         }
+
          .image-box {
             width: 100%;
+
+            @media @desktop {
+               width: 45%;
+            }
+
             img {
                border-radius: 5px;
                box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 5px rgba(255, 255, 255, 0.22);
@@ -142,17 +156,30 @@ section {
             align-items: center;
             flex-direction: column;
 
+            position: relative;
+            left: -2vw;
+
             width: 100%;
+
+            @media @desktop {
+               width: 48%;
+            }
 
             text-align: center;
 
             h2 {
-               font-size: 6rem;
-               margin: 60px 0 0;
+               font-size: 13vw;
+               margin: 20px 0 0;
+               padding: 30px 0;
+               border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+
+               @media @desktop {
+                  font-size: 7rem;
+               }
             }
 
             p {
-               margin: 40px;
+               margin: 30px;
             }
 
             .buttons {
@@ -169,5 +196,77 @@ section {
             }
          }
       }
+   }
+
+   &.footer {
+      .container {
+         display: flex;
+         flex-direction: column;
+         padding-top: 50px;
+         padding-bottom: 50px;
+         width: 90%;
+         align-items: center;
+      }
+
+
+      .resources {
+         display: flex;
+         flex-direction: row;
+         color: black;
+         justify-content: space-between;
+         padding: 0 0 20px;
+         border-bottom: 1px solid @dark-vulkan;
+         
+         h4 {
+            margin-bottom: 10px;
+
+            @media @desktop {
+               font-size: 1.6rem;
+            }
+         }
+
+         a {
+            font-size: 1.5rem;
+            color: @vulkan;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 3px;
+
+            @media @desktop {
+               font-size: 1.6rem;
+            }
+         }
+
+         .page-links {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+         }
+
+         .get-involved {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            text-align: right;
+         }
+      }
+
+      .socials {
+         padding: 20px 0 0;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         width: 100%;
+
+         @media @desktop {
+            width: 400px;
+         }
+
+         i {
+            color: @vulkan;
+            font-size: 2.8rem;
+         }
+      }
+
    }
 }

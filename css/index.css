@@ -209,6 +209,9 @@ h2 {
 h3 {
   font-size: 2.4rem;
 }
+h4 {
+  font-size: 1.5rem;
+}
 p {
   line-height: 1.5;
   font-size: 1.7rem;
@@ -407,42 +410,131 @@ section.donate {
   padding: 100px 0;
   background: #10101a;
 }
-section.donate .small-container {
+section.donate .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-section.donate .small-container .image-box {
+@media (min-width: 1200px) {
+  section.donate .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+section.donate .container .image-box {
   width: 100%;
 }
-section.donate .small-container .image-box img {
+@media (min-width: 1200px) {
+  section.donate .container .image-box {
+    width: 45%;
+  }
+}
+section.donate .container .image-box img {
   border-radius: 5px;
   box-shadow: 0 0 10px #ffffff, 0 0 5px rgba(255, 255, 255, 0.22);
 }
-section.donate .small-container .text {
+section.donate .container .text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  left: -2vw;
   width: 100%;
   text-align: center;
 }
-section.donate .small-container .text h2 {
-  font-size: 6rem;
-  margin: 60px 0 0;
+@media (min-width: 1200px) {
+  section.donate .container .text {
+    width: 48%;
+  }
 }
-section.donate .small-container .text p {
-  margin: 40px;
+section.donate .container .text h2 {
+  font-size: 13vw;
+  margin: 20px 0 0;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.363);
 }
-section.donate .small-container .text .buttons {
+@media (min-width: 1200px) {
+  section.donate .container .text h2 {
+    font-size: 7rem;
+  }
+}
+section.donate .container .text p {
+  margin: 30px;
+}
+section.donate .container .text .buttons {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
   flex-direction: column;
   align-items: center;
 }
-section.donate .small-container .text .buttons button {
+section.donate .container .text .buttons button {
   width: 60%;
   margin-bottom: 10px;
+}
+section.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  align-items: center;
+}
+section.footer .resources {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-between;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #10101a;
+}
+section.footer .resources h4 {
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  section.footer .resources h4 {
+    font-size: 1.6rem;
+  }
+}
+section.footer .resources a {
+  font-size: 1.5rem;
+  color: #111121;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+@media (min-width: 1200px) {
+  section.footer .resources a {
+    font-size: 1.6rem;
+  }
+}
+section.footer .resources .page-links {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+section.footer .resources .get-involved {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: right;
+}
+section.footer .socials {
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  section.footer .socials {
+    width: 400px;
+  }
+}
+section.footer .socials i {
+  color: #111121;
+  font-size: 2.8rem;
 }
